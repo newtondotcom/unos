@@ -22,7 +22,7 @@ const Statistics = () => {
   return (
     <section className="py-20 bg-gradient-primary">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Les Chiffres Parlent d'Eux-Mêmes
           </h2>
@@ -34,9 +34,9 @@ const Statistics = () => {
         
         <div className="grid md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
-            <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 text-center shadow-hero">
+            <Card key={index} className={`bg-white/10 backdrop-blur-sm border-white/20 text-center shadow-hero hover-lift animate-slide-in-${index % 2 === 0 ? 'left' : 'right'} animate-delay-${(index + 1) * 200}`}>
               <CardContent className="p-8">
-                <div className="text-5xl md:text-6xl font-bold text-white mb-4">
+                <div className="text-5xl md:text-6xl font-bold text-white mb-4 animate-scale-in animate-delay-300">
                   {stat.number}
                 </div>
                 <div className="text-lg text-white/90 mb-3 font-medium">
