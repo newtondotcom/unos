@@ -17,7 +17,7 @@ const CallToAction = () => {
         </div>
         
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-center">
+          <Card className="bg-white/10 backdrop-blur-xs border-white/20 text-center">
             <CardContent className="p-6">
               <Mail className="w-8 h-8 text-white mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">Documentation</h3>
@@ -28,7 +28,7 @@ const CallToAction = () => {
             </CardContent>
           </Card>
           
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-center w-[800px]">
+          <Card className="bg-white/10 backdrop-blur-xs border-white/20 text-center w-[800px]">
             <CardContent className="p-6">
               <Calendar className="w-8 h-8 text-white mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">Une idée, une question ou une démonstration ?</h3>
