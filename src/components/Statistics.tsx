@@ -1,0 +1,57 @@
+import { Card, CardContent } from "@/components/ui/card";
+
+const Statistics = () => {
+  const stats = [
+    {
+      number: "92,5%",
+      description: "Part du marché français détenue par un OS américain en 2024",
+      context: "Il est temps de reprendre notre indépendance numérique"
+    },
+    {
+      number: "80%",
+      description: "Des entreprises françaises utilisent déjà des solutions open source",
+      context: "UnOS s'inscrit dans cette dynamique existante"
+    },
+    {
+      number: "5,9 Md€",
+      description: "Chiffre d'affaires français de l'Open Source en 2022",
+      context: "La France est la locomotive de l'Open Source en Europe"
+    }
+  ];
+
+  return (
+    <section className="py-20 bg-gradient-primary">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Les Chiffres Parlent d'Eux-Mêmes
+          </h2>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            La dépendance numérique de la France est réelle, mais l'écosystème open source français 
+            est déjà robuste et prêt à porter cette révolution.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8">
+          {stats.map((stat, index) => (
+            <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 text-center shadow-hero">
+              <CardContent className="p-8">
+                <div className="text-5xl md:text-6xl font-bold text-white mb-4">
+                  {stat.number}
+                </div>
+                <div className="text-lg text-white/90 mb-3 font-medium">
+                  {stat.description}
+                </div>
+                <div className="text-sm text-white/70 leading-relaxed">
+                  {stat.context}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Statistics;
