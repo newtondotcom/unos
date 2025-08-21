@@ -38,7 +38,7 @@ const Statistics = () => {
         
         <div className="grid md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
-            <Card key={index} className={`bg-white/10 backdrop-blur-sm border-white/20 text-center shadow-hero hover-lift animate-slide-in-${index % 2 === 0 ? 'left' : 'right'} animate-delay-${(index + 1) * 200}`}>
+            <Card key={index} className={`bg-white/10 backdrop-blur-xs border-white/20 text-center shadow-hero hover-lift animate-slide-in-${index % 2 === 0 ? 'left' : 'right'} animate-delay-${(index + 1) * 200}`}>
               <CardContent className="p-8">
                 <NumberTicker
                 value={parseFloat(stat.number.replace(',', '.'))}

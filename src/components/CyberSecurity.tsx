@@ -94,7 +94,7 @@ const CyberSecurity = () => {
               <ul className="space-y-3">
                 {visibleCosts.map((cost, index) => (
                   <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
                     {cost}
                   </li>
                 ))}
@@ -118,7 +118,7 @@ const CyberSecurity = () => {
               <ul className="space-y-3">
                 {hiddenCosts.map((cost, index) => (
                   <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <div className="w-1.5 h-1.5 bg-destructive rounded-full mt-2 flex-shrink-0" />
+                    <div className="w-1.5 h-1.5 bg-destructive rounded-full mt-2 shrink-0" />
                     {cost}
                   </li>
                 ))}
