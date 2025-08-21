@@ -21,30 +21,19 @@ const CallToAction = () => {
             <CardContent className="p-6">
               <Mail className="w-8 h-8 text-white mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">Documentation</h3>
-              <p className="text-white/70 text-sm mb-4">Recevez notre documentation complète</p>
-              <Button variant="outline" size="sm" className="border-white/30 text-white hover:bg-white/10">
-                Télécharger
+              <p className="text-white/70 text-sm mb-4">Découvrez notre documentation complète</p>
+              <Button size="sm">
+                Accéder
               </Button>
             </CardContent>
           </Card>
           
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-center">
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-center w-[800px]">
             <CardContent className="p-6">
               <Calendar className="w-8 h-8 text-white mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-white mb-2">Démonstration</h3>
-              <p className="text-white/70 text-sm mb-4">Planifiez une démo personnalisée</p>
-              <Button variant="secondary" size="sm">
-                Réserver
-              </Button>
-            </CardContent>
-          </Card>
-          
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-center">
-            <CardContent className="p-6">
-              <Phone className="w-8 h-8 text-white mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-white mb-2">Conseil</h3>
+              <h3 className="text-lg font-semibold text-white mb-2">Une idée, une question ou une démonstration ?</h3>
               <p className="text-white/70 text-sm mb-4">Échangez avec nos experts</p>
-              <Button variant="outline" size="sm" className="border-white/30 text-white hover:bg-white/10">
+              <Button variant="outline" size="sm">
                 Contacter
               </Button>
             </CardContent>

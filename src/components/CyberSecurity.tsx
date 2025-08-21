@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, AlertTriangle, TrendingDown, Eye, EyeOff } from "lucide-react";
+import { Shield, AlertTriangle, TrendingUp, Eye, EyeOff } from "lucide-react";
 
 const CyberSecurity = () => {
   const visibleCosts = [
@@ -25,12 +25,6 @@ const CyberSecurity = () => {
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center animate-float">
-              <Shield className="w-6 h-6 text-white" />
-            </div>
-            <AlertTriangle className="w-8 h-8 text-destructive animate-pulse" />
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Les PME Face aux Cyberattaques
           </h2>
@@ -45,7 +39,7 @@ const CyberSecurity = () => {
           <Card className="shadow-card hover-lift animate-slide-in-left">
             <CardHeader className="text-center">
               <div className="w-20 h-20 bg-destructive/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingDown className="w-10 h-10 text-destructive" />
+                <TrendingUp className="w-10 h-10 text-destructive" />
               </div>
               <CardTitle className="text-3xl font-bold text-destructive">60%</CardTitle>
               <p className="text-muted-foreground">

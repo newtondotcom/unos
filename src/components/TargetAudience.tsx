@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Building, Users, TrendingUp, Shield } from "lucide-react";
+import CardFlip from "./kokonutui/card-flip";
 
 const TargetAudience = () => {
   const audiences = [
@@ -33,40 +34,14 @@ const TargetAudience = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             UnOS s'adresse principalement aux PME françaises qui souhaitent reprendre 
-            le contrôle de leur système d'information tout en bénéficiant d'une solution clé en main.
+            le contrôle de leur système d'information tout en bénéficiant d'une solution clé en main. Cependant, par sa modularité, il permet également aux grandes entreprises et aux secteurs sensibles de migrer vers une solution souveraine et sécurisée.
           </p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {audiences.map((audience, index) => (
-            <Card key={index} className={`shadow-card hover-lift transition-all duration-300 animate-scale-in animate-delay-${(index + 1) * 200}`}>
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 animate-float">
-                  <audience.icon className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle className="text-xl">{audience.title}</CardTitle>
-                <CardDescription className="text-muted-foreground">
-                  {audience.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  {audience.benefits.map((benefit, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <TrendingUp className="w-4 h-4 text-primary-blue" />
-                      {benefit}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+            < CardFlip key={index} title={audience.title} description={audience.description} subtitle={audience.description} features={audience.benefits}/>
           ))}
-        </div>
-        
-        <div className="text-center animate-fade-in animate-delay-500">
-          <Button variant="sovereign" size="lg" className="shadow-elegant hover-lift">
-            Découvrir Nos Offres
-          </Button>
         </div>
       </div>
     </section>

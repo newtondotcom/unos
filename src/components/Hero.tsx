@@ -1,12 +1,24 @@
-import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-unos.jpg";
 import { Shield, Cpu, Building2 } from "lucide-react";
+import GradientButton from "@/components/kokonutui/gradient-button";
+import { FlickeringGrid } from "./magicui/flickering-grid";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
-      <div className="absolute inset-0 bg-black/20" />
-      <div className="absolute right-0 top-0 h-full w-1/2 opacity-30">
+      
+      <div className="absolute inset-0 bg-black/20 h-full" > 
+        <FlickeringGrid
+        className="absolute inset-0 z-0 size-full"
+        squareSize={4}
+        gridGap={6}
+        color="#6B7280"
+        maxOpacity={0.5}
+        flickerChance={0.1}
+        width={1600}
+      />
+      </div>
+      <div className="absolute right-0 top-0 h-full w-full opacity-30">
         <img 
           src={heroImage} 
           alt="UnOS - Système d'exploitation français unifié" 
@@ -28,13 +40,13 @@ const Hero = () => {
                 <Building2 className="w-4 h-4 text-white" />
               </div>
             </div>
-            <span className="text-white/90 font-medium">Souveraineté Numérique Française</span>
+            <span className="text-white/90 font-medium">Pionnier de la Souveraineté Numérique Française</span>
           </div>
           
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight animate-slide-in-left animate-delay-200">
             UnOS
             <span className="block text-4xl md:text-5xl text-blue-200 font-normal mt-2">
-              Unified Operating System
+              <span className="font-bold">Un</span> seul <span className="font-bold">OS</span> pour les entreprises françaises
             </span>
           </h1>
           
@@ -44,26 +56,13 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-left animate-delay-400">
-            <Button variant="secondary" size="lg" className="bg-white text-sovereign-navy hover:bg-white/90 hover-lift">
-              Découvrir UnOS
-            </Button>
-            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 hover-lift">
-              Demander une démo
-            </Button>
+            < GradientButton label={"Découvrir UnOS"} variant="emerald"/>
+            < GradientButton label={"Demander une démo"} variant="purple"/>
           </div>
           
-          <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-white/20 animate-fade-in animate-delay-500">
+          <div className="grid grid-cols-1 gap-8 mt-12 pt-8 border-t border-white/20 animate-fade-in animate-delay-500">
             <div className="animate-scale-in animate-delay-100">
-              <div className="text-3xl font-bold text-white">100%</div>
-              <div className="text-white/70">Open Source</div>
-            </div>
-            <div className="animate-scale-in animate-delay-200">
-              <div className="text-3xl font-bold text-white">🇫🇷</div>
-              <div className="text-white/70">Made in France</div>
-            </div>
-            <div className="animate-scale-in animate-delay-300">
-              <div className="text-3xl font-bold text-white">0</div>
-              <div className="text-white/70">GAFAM</div>
+              <div className="text-2xl font-medium text-white">Pensé et créé en France, par des français, pour des français 🇫🇷🥐</div>
             </div>
           </div>
         </div>
