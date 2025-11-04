@@ -2,6 +2,7 @@ import heroImage from "@/assets/hero-unos.jpg";
 import { Shield, Cpu, Building2 } from "lucide-react";
 import GradientButton from "@/components/kokonutui/gradient-button";
 import { FlickeringGrid } from "./magicui/flickering-grid";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -56,7 +57,9 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-left animate-delay-400">
-            < GradientButton label={"Découvrir UnOS"} variant="emerald"/>
+            <Link to="/configurateur">
+              < GradientButton label={"Configurateur & Devis"} variant="emerald"/>
+            </Link>
             < GradientButton label={"Demander une démo"} variant="purple"/>
           </div>
           
