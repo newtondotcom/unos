@@ -38,7 +38,7 @@ const TargetAudience = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12 place-items-center md:items-stretch md:justify-items-stretch">
           {audiences.map((audience, index) => (
             < CardFlip key={index} title={audience.title} description={audience.description} subtitle={audience.description} features={audience.benefits}/>
           ))}
