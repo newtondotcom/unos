@@ -58,15 +58,18 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-white/90 mt-4 mb-8 leading-relaxed animate-slide-in-left animate-delay-350">
               Nous installons les outils qu'il vous faut. Pas ceux que nous préférons.
             </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-left animate-delay-400">
-            <Link to="/configurateur">
-              < GradientButton label={"Configurateur & Devis"} variant="emerald"/>
-            </Link>
-            < GradientButton label={"Demander une démo"} variant="purple"/>
-          </div>
-          
-          <div className="grid grid-cols-1 gap-8 mt-12 pt-8 border-t border-white/20 animate-fade-in animate-delay-500">
+
+            <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-left animate-delay-400">
+              <Link to="/configurateur">
+                <GradientButton label={"Configurateur & Devis"} variant="emerald" />
+              </Link>
+              <GradientButton label={"Demander une démo"} variant="purple" />
+              <Link to="/details">
+                <GradientButton label={"Voir nos choix technologiques"} variant="orange" />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 gap-8 mt-12 pt-8 border-t border-white/20 animate-fade-in animate-delay-500">
             <div className="animate-scale-in animate-delay-100">
               <div className="text-2xl font-medium text-white">Pensé et créé en France, par des français, pour des français 🇫🇷🥐</div>
             </div>
