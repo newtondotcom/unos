@@ -4,6 +4,7 @@ import Statistics from "@/components/Statistics";
 import CyberSecurity from "@/components/CyberSecurity";
 import TargetAudience from "@/components/TargetAudience";
 import CallToAction from "@/components/CallToAction";
+import OpenSourceAudits from "@/components/OpenSourceAudits";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Features />
       <Statistics />
       <CyberSecurity />
+      <OpenSourceAudits />
       <TargetAudience />
       <CallToAction />
     </main>
