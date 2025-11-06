@@ -51,10 +51,13 @@ const Hero = () => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed animate-slide-in-left animate-delay-300">
-            Le système d'exploitation français qui unifie des solutions open source pour offrir 
-            aux entreprises une suite bureautique complète, sécurisée et souveraine.
-          </p>
+            <p className="text-xl md:text-2xl text-white/90 leading-relaxed animate-slide-in-left animate-delay-300">
+              Le système d'exploitation français qui unifie des solutions open source pour offrir 
+              aux entreprises une suite bureautique complète, sécurisée et souveraine.
+            </p>
+            <p className="text-lg md:text-xl text-white/90 mt-4 mb-8 leading-relaxed animate-slide-in-left animate-delay-350">
+              Nous installons les outils qu'il vous faut. Pas ceux que nous préférons.
+            </p>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-left animate-delay-400">
             <Link to="/configurateur">
