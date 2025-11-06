@@ -5,7 +5,7 @@ import { Mail, Calendar } from "lucide-react";
 const CallToAction = () => {
   return (
     <section className="py-20 bg-sovereign-navy">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Prêt à Reprendre Votre Indépendance Numérique ?
@@ -33,7 +33,7 @@ const CallToAction = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-white/10 backdrop-blur-xs border-white/20 text-center w-[800px]">
+          <Card className="bg-white/10 backdrop-blur-xs border-white/20 text-center">
             <CardContent className="p-6">
               <Calendar className="w-8 h-8 text-white mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">
