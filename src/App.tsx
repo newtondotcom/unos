@@ -6,6 +6,7 @@ import Index from "@/pages/Index";
 import Configurateur from "@/pages/Configurateur";
 import Details from "@/pages/Details";
 import NotFound from "@/pages/NotFound";
+import Rack from "@/pages/Rack";
 
 
 const App = () => (
@@ -17,6 +18,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/configurateur" element={<Configurateur />} />
             <Route path="/details" element={<Details />} />
+            <Route path="/rack" element={<Rack />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
       </BrowserRouter>
